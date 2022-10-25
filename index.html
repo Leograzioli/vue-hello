@@ -15,7 +15,21 @@
     <div id="app">
         <div class="container">
             <h1>{{message}}</h1>
-            <img :src="srcImage" alt="">
+            <div class="select">
+                <label for="tutor-select">Chi sei?</label>
+                <select id="tutor-selec" v-model="person">
+                    <option value=""></option>
+                    <option value="marco">marco</option>
+                    <option value="mauro">mauro</option>
+                    <option value="olga">olga</option>
+                </select>
+                <button @click="witchTutor">click me!</button>
+
+                <h2> {{greet}}</h2>
+            </div>
+            <div class="img-ct">
+                <img :src="srcImage" alt="">
+            </div>
         </div>
     </div>
 
