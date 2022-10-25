@@ -20,7 +20,9 @@ createApp({
             } else if (this.person === "olga") {
                 this.srcImage = "img/shutterstock_1830294143.webp"
                 this.greet = `welcome ${this.person}`
-            } 
+            } else {
+                this.greet = `please picka name`
+            }
         }
     }
 }).mount('#app')
