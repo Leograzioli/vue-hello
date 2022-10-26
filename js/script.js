@@ -10,10 +10,9 @@ createApp({
         }
     }, 
     methods: {
-        witchTutor() {
+        witchPerson() {
             if (this.person === "mauro") {
-                this.srcImage = "img/6890001.jpg"
-                this.greet = `welcome ${this.person}`
+                this.srcImage = "https://www.gameway.it/img/f/medium/6890001.jpg"
             } else if (this.person === "marco"){
                 this.srcImage = "img/metallo-dado-d20-da-20-mm.jpg"
                 this.greet = `welcome ${this.person}`
